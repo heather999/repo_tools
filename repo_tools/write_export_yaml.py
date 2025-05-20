@@ -44,7 +44,7 @@ def export_chained_collection(repo, parent_chain, chain_id=None, ntranche=10,
     # the processing used the {parent_chain}/{timestamp} collection naming
     # convention.
     run_collections = butler.registry.queryCollections(
-        f"{parent_chain}/20*", collectionTypes=[daf_butler.CollectionType.RUN]
+        f"HSC/runs/PDR2/v24.1.0.rc2_DM-39132_udeep/*", collectionTypes=[daf_butler.CollectionType.RUN]
     )
     num_collections = len(run_collections)
     if verbose:
